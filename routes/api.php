@@ -9,3 +9,6 @@ Route::group(['namespace' => 'Aluno'], function () {
     Route::put('/aluno/{id}', 'AlunoController@update');
     Route::delete('/aluno/{id}', 'AlunoController@destroy');
 });
+
+
+// Todo relacionamento com professor
