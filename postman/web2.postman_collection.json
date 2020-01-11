@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "b122cde5-aba5-4cb4-bfc5-a82eb0d3426c",
+		"name": "web2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DEL ALuno",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/aluno/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"aluno",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Aluno",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Gabriel Roque\",\n    \"email\": \"gabrielroque@gmail.com\",\n    \"registro\": \"564879846\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/aluno",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"aluno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Aluno",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Gabriel Roque MS\",\n    \"email\": \"lucas@gmail.com\",\n    \"registro\": \"564879846\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/aluno/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"aluno",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Alunos",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f092ec41-5762-4b5f-8a21-95fb0d1554c6",
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/alunos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"alunos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SHOW Aluno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/v1/aluno/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"aluno",
+						"11"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
